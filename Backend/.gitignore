@@ -1,0 +1,3 @@
+face_vectors_db
+__pycache__
+model/best_vgg16_improved_v2_model.keras
