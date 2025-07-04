@@ -13,6 +13,7 @@ import uvicorn
 from emotion_detector import EmotionDetector
 from vector_face_tracker import VectorFaceTracker
 from device_detector import DeviceDetector
+from sign_language_detector import SignLanguageDetector
 
 app = FastAPI(title="Student Concentration Tracker API", version="1.0.0")
 
@@ -29,6 +30,7 @@ app.add_middleware(
 emotion_detector = EmotionDetector()
 face_tracker = VectorFaceTracker()
 device_detector = DeviceDetector()
+sign_language_detector = SignLanguageDetector()
 
 # WebSocket connection manager
 class ConnectionManager:
@@ -233,6 +235,24 @@ async def export_device_data():
     else:
         raise HTTPException(status_code=500, detail="Failed to export device data")
 
+# Sign Language Endpoints
+@app.get("/api/signlanguage/statistics")
+async def get_sign_language_statistics():
+    """Get sign language detection statistics"""
+    try:
+        return sign_language_detector.get_detection_statistics()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/signlanguage/clear-history")
+async def clear_sign_language_history():
+    """Clear sign language detection history"""
+    try:
+        sign_language_detector.clear_history()
+        return {"message": "Sign language history cleared successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 async def process_camera_frames():
     """Background task to process camera frames"""
     global camera_active, cap
@@ -326,6 +346,207 @@ async def websocket_endpoint(websocket: WebSocket):
             await websocket.send_text(f"Message received: {data}")
     except WebSocketDisconnect:
         manager.disconnect(websocket)
+
+@app.websocket("/ws/signlanguage")
+async def sign_language_websocket(websocket: WebSocket):
+    """WebSocket endpoint for sign language detection"""
+    await websocket.accept()
+    
+    # Sign language detection state
+    sign_language_active = False
+    sign_cap = None
+    processing_task = None
+    
+    try:
+        # Send initial status
+        await websocket.send_text(json.dumps({
+            "type": "connected",
+            "message": "Sign language WebSocket connected"
+        }))
+        
+        while True:
+            try:
+                # Wait for client message with timeout
+                data = await asyncio.wait_for(websocket.receive_text(), timeout=0.1)
+                message = json.loads(data)
+                
+                if message.get("action") == "start_detection":
+                    if not sign_language_active:
+                        sign_language_active = True
+                        sign_cap = cv2.VideoCapture(0)
+                        
+                        if sign_cap.isOpened():
+                            await websocket.send_text(json.dumps({
+                                "type": "status",
+                                "message": "Sign language detection started"
+                            }))
+                            
+                            # Start detection loop
+                            processing_task = asyncio.create_task(
+                                process_sign_language_frames_continuous(websocket, sign_cap)
+                            )
+                        else:
+                            await websocket.send_text(json.dumps({
+                                "type": "error",
+                                "message": "Could not open camera"
+                            }))
+                
+                elif message.get("action") == "stop_detection":
+                    sign_language_active = False
+                    if processing_task:
+                        processing_task.cancel()
+                        processing_task = None
+                    if sign_cap:
+                        sign_cap.release()
+                        sign_cap = None
+                    
+                    await websocket.send_text(json.dumps({
+                        "type": "status",
+                        "message": "Sign language detection stopped"
+                    }))
+                    
+            except asyncio.TimeoutError:
+                # No message received, continue
+                continue
+    
+    except WebSocketDisconnect:
+        if processing_task:
+            processing_task.cancel()
+        if sign_cap:
+            sign_cap.release()
+        print("Sign language WebSocket disconnected")
+    except Exception as e:
+        print(f"Sign language WebSocket error: {e}")
+        if processing_task:
+            processing_task.cancel()
+        if sign_cap:
+            sign_cap.release()
+
+async def process_sign_language_frames_continuous(websocket: WebSocket, cap):
+    """Continuously process sign language detection frames"""
+    frame_count = 0
+    
+    try:
+        while cap and cap.isOpened():
+            ret, frame = cap.read()
+            if not ret:
+                break
+            
+            frame_count += 1
+            
+            # Process every 3rd frame for better performance
+            if frame_count % 3 == 0:
+                # Detect sign language
+                detection_result = sign_language_detector.detect_sign_in_frame(frame)
+                
+                # Annotate frame
+                annotated_frame = sign_language_detector.annotate_frame_with_landmarks(frame)
+                
+                # Encode frame to base64
+                _, buffer = cv2.imencode('.jpg', annotated_frame)
+                frame_base64 = base64.b64encode(buffer).decode('utf-8')
+                
+                # Send frame update
+                await websocket.send_text(json.dumps({
+                    "type": "frame_update",
+                    "frame": frame_base64
+                }))
+                
+                # Send detection if sign was detected
+                if detection_result.get('sign'):
+                    await websocket.send_text(json.dumps({
+                        "type": "sign_detection",
+                        "data": detection_result
+                    }))
+            
+            await asyncio.sleep(0.033)  # ~30 FPS
+            
+    except asyncio.CancelledError:
+        print("Sign language processing task cancelled")
+    except Exception as e:
+        print(f"Error in continuous sign language processing: {e}")
+    finally:
+        if cap:
+            cap.release()
+
+async def process_single_sign_frame(websocket: WebSocket, cap):
+    """Process a single sign language frame"""
+    try:
+        ret, frame = cap.read()
+        if not ret:
+            return
+        
+        # Detect sign language
+        detection_result = sign_language_detector.detect_sign_in_frame(frame)
+        
+        # Annotate frame
+        annotated_frame = sign_language_detector.annotate_frame_with_landmarks(frame)
+        
+        # Encode frame to base64
+        _, buffer = cv2.imencode('.jpg', annotated_frame)
+        frame_base64 = base64.b64encode(buffer).decode('utf-8')
+        
+        # Send frame update
+        await websocket.send_text(json.dumps({
+            "type": "frame_update",
+            "frame": frame_base64
+        }))
+        
+        # Send detection if sign was detected
+        if detection_result.get('sign'):
+            await websocket.send_text(json.dumps({
+                "type": "sign_detection",
+                "data": detection_result
+            }))
+            
+    except Exception as e:
+        print(f"Error processing sign frame: {e}")
+
+async def process_sign_language_frames(websocket: WebSocket, cap, active_flag):
+    """Process sign language detection frames"""
+    frame_count = 0
+    
+    while cap and cap.isOpened() and active_flag:
+        try:
+            ret, frame = cap.read()
+            if not ret:
+                break
+            
+            frame_count += 1
+            
+            # Process every 3rd frame for better performance
+            if frame_count % 3 == 0:
+                # Detect sign language
+                detection_result = sign_language_detector.detect_sign_in_frame(frame)
+                
+                # Annotate frame
+                annotated_frame = sign_language_detector.annotate_frame_with_landmarks(frame)
+                
+                # Encode frame to base64
+                _, buffer = cv2.imencode('.jpg', annotated_frame)
+                frame_base64 = base64.b64encode(buffer).decode('utf-8')
+                
+                # Send frame update
+                await websocket.send_text(json.dumps({
+                    "type": "frame_update",
+                    "frame": frame_base64
+                }))
+                
+                # Send detection if sign was detected
+                if detection_result.get('sign'):
+                    await websocket.send_text(json.dumps({
+                        "type": "sign_detection",
+                        "data": detection_result
+                    }))
+            
+            await asyncio.sleep(0.033)  # ~30 FPS
+            
+        except Exception as e:
+            print(f"Error in sign language processing: {e}")
+            break
+    
+    if cap:
+        cap.release()
 
 @app.post("/export/json")
 async def export_data_json():

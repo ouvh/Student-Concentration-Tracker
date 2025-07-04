@@ -12,8 +12,8 @@
               </svg>
             </div>
             <div>
-              <h1 class="text-2xl font-bold text-gray-900">Student Concentration Tracker</h1>
-              <p class="text-sm text-gray-600">Real-time emotion and concentration monitoring</p>
+              <h1 class="text-2xl font-bold text-gray-900">AI Learning Assistant</h1>
+              <p class="text-sm text-gray-600">Emotion tracking & sign language translation</p>
             </div>
           </div>
           
@@ -45,13 +45,41 @@
             </button>
           </div>
         </div>
+        
+        <!-- Tab Navigation -->
+        <div class="border-t border-gray-200">
+          <nav class="flex space-x-8" aria-label="Tabs">
+            <button
+              @click="activeTab = 'concentration'"
+              :class="activeTab === 'concentration' ? 'border-primary-500 text-primary-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+              class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors"
+            >
+              <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+              Concentration Tracking
+            </button>
+            <button
+              @click="activeTab = 'signlanguage'"
+              :class="activeTab === 'signlanguage' ? 'border-primary-500 text-primary-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
+              class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors"
+            >
+              <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+              </svg>
+              Sign Language Translation
+            </button>
+          </nav>
+        </div>
       </div>
     </header>
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <!-- Statistics Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <!-- Concentration Tracking Tab -->
+      <div v-if="activeTab === 'concentration'">
+        <!-- Statistics Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
         <div class="card">
           <div class="flex items-center">
             <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -372,6 +400,184 @@
                     :class="getConcentrationBarClass(face.avg_concentration)"
                     :style="{ width: `${face.avg_concentration}%` }"
                   ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- End of Concentration Tab -->
+      </div>
+
+      <!-- Sign Language Translation Tab -->
+      <div v-if="activeTab === 'signlanguage'">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Sign Language Camera Feed -->
+          <div class="card">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-xl font-semibold text-gray-900">Sign Language Camera</h2>
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full animate-pulse" :class="signLanguageActive ? 'bg-green-500' : 'bg-red-500'"></div>
+                <span class="text-sm text-gray-600">{{ signLanguageActive ? 'ACTIVE' : 'INACTIVE' }}</span>
+              </div>
+            </div>
+            
+            <div class="aspect-video bg-gray-900 rounded-lg overflow-hidden relative mb-4">
+              <img 
+                v-if="signLanguageFrame" 
+                :src="`data:image/jpeg;base64,${signLanguageFrame}`" 
+                alt="Sign Language Feed"
+                class="w-full h-full object-cover"
+              />
+              <div v-else class="flex items-center justify-center h-full">
+                <div class="text-center text-gray-400">
+                  <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h4a1 1 0 011 1v2m0 0V1a1 1 0 011-1h4a1 1 0 011 1v3M7 4H5a2 2 0 00-2 2v3m4-5a2 2 0 012 2v3m0 0V9a2 2 0 012 2v3m0 0h2a2 2 0 012-2v-3a2 2 0 00-2-2h-2"></path>
+                  </svg>
+                  <p>{{ signLanguageActive ? 'Waiting for sign language feed...' : 'Sign language detection is off' }}</p>
+                </div>
+              </div>
+              
+              <!-- Current Detection Overlay -->
+              <div v-if="currentSignDetection" class="absolute top-4 left-4 right-4">
+                <div class="bg-black bg-opacity-75 text-white px-4 py-2 rounded-lg">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium">Detected:</span>
+                    <span class="text-lg font-bold">{{ currentSignDetection.sign }}</span>
+                  </div>
+                  <div class="flex items-center justify-between mt-1">
+                    <span class="text-xs">Confidence:</span>
+                    <span class="text-xs">{{ (currentSignDetection.confidence * 100).toFixed(1) }}%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sign Language Controls -->
+            <div class="flex items-center justify-between">
+              <button 
+                @click="toggleSignLanguage" 
+                :class="signLanguageActive ? 'btn-danger' : 'btn-success'"
+                :disabled="loading"
+              >
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path v-if="signLanguageActive" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                {{ signLanguageActive ? 'Stop Detection' : 'Start Detection' }}
+              </button>
+              
+              <div class="flex items-center space-x-2">
+                <button 
+                  @click="clearTranslatedText"
+                  class="btn-secondary"
+                  :disabled="translatedText.length === 0"
+                >
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                  </svg>
+                  Clear Text
+                </button>
+                
+                <button 
+                  @click="copyTranslatedText"
+                  class="btn-secondary"
+                  :disabled="translatedText.length === 0"
+                >
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                  </svg>
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Translation Output -->
+          <div class="space-y-6">
+            <!-- Translated Text Display -->
+            <div class="card">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-900">Translated Text</h3>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 rounded-full" :class="translatedText.length > 0 ? 'bg-green-500' : 'bg-gray-400'"></div>
+                  <span class="text-sm text-gray-600">{{ translatedText.length }} characters</span>
+                </div>
+              </div>
+              
+              <div class="min-h-[200px] max-h-[400px] overflow-y-auto">
+                <div v-if="translatedText.length === 0" class="flex items-center justify-center h-48 text-gray-400">
+                  <div class="text-center">
+                    <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                    </svg>
+                    <p class="text-sm">Translated text will appear here</p>
+                  </div>
+                </div>
+                <div v-else class="prose prose-lg max-w-none">
+                  <div 
+                    class="bg-gray-50 rounded-lg p-4 border border-gray-200"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; line-height: 1.6;"
+                  >
+                    {{ translatedText }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sign Language Statistics -->
+            <div class="card">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Detection Statistics</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                  <div class="text-2xl font-bold text-blue-600">{{ signLanguageStats.totalSigns }}</div>
+                  <div class="text-sm text-gray-600">Total Signs</div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                  <div class="text-2xl font-bold text-green-600">{{ signLanguageStats.wordsPerMinute }}</div>
+                  <div class="text-sm text-gray-600">Words/Min</div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                  <div class="text-2xl font-bold text-purple-600">{{ signLanguageStats.avgConfidence }}%</div>
+                  <div class="text-sm text-gray-600">Avg Confidence</div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                  <div class="text-2xl font-bold text-orange-600">{{ signLanguageStats.uniqueSigns }}</div>
+                  <div class="text-sm text-gray-600">Unique Signs</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Recent Detections -->
+            <div class="card">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Detections</h3>
+              <div class="space-y-2 max-h-48 overflow-y-auto">
+                <div v-if="recentSignDetections.length === 0" class="text-center py-8 text-gray-400">
+                  <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path>
+                  </svg>
+                  <p class="text-sm">No recent detections</p>
+                </div>
+                <div v-else>
+                  <div 
+                    v-for="(detection, index) in recentSignDetections.slice(0, 10)" 
+                    :key="index"
+                    class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  >
+                    <div class="flex items-center space-x-3">
+                      <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                        <span class="text-blue-600 font-bold text-sm">{{ detection.sign.charAt(0).toUpperCase() }}</span>
+                      </div>
+                      <div>
+                        <div class="font-medium text-gray-900">{{ detection.sign }}</div>
+                        <div class="text-sm text-gray-500">{{ (detection.confidence * 100).toFixed(1) }}% confidence</div>
+                      </div>
+                    </div>
+                    <div class="text-sm text-gray-500">
+                      {{ formatTimeAgo(detection.timestamp) }}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -800,6 +1006,24 @@ export default {
     // Reset functionality
     const showResetConfirmModal = ref(false)
     const resetting = ref(false)
+
+    // Tab management
+    const activeTab = ref('concentration')
+
+    // Sign Language Translation state
+    const signLanguageActive = ref(false)
+    const signLanguageFrame = ref(null)
+    const currentSignDetection = ref(null)
+    const translatedText = ref('')
+    const recentSignDetections = ref([])
+    const signLanguageStats = reactive({
+      totalSigns: 0,
+      wordsPerMinute: 0,
+      avgConfidence: 0,
+      uniqueSigns: 0
+    })
+    const signLanguageStartTime = ref(null)
+    const signLanguageHistory = ref([])
 
     // Computed properties
     const deviceDistractionText = computed(() => {
@@ -1423,6 +1647,147 @@ export default {
       }
     }
 
+    // Sign Language Translation methods
+    let signLanguageWS = null
+    
+    const startSignLanguageWebSocket = () => {
+      signLanguageWS = new WebSocket('ws://localhost:8000/ws/signlanguage')
+      
+      signLanguageWS.onopen = () => {
+        console.log('Connected to sign language WebSocket')
+        // Send start detection message
+        signLanguageWS.send(JSON.stringify({
+          action: 'start_detection'
+        }))
+      }
+      
+      signLanguageWS.onmessage = (event) => {
+        try {
+          const message = JSON.parse(event.data)
+          
+          if (message.type === 'frame_update') {
+            signLanguageFrame.value = message.frame
+          } else if (message.type === 'sign_detection') {
+            const detection = message.data
+            currentSignDetection.value = detection
+            
+            // Add to translated text if confidence is high enough
+            if (detection.confidence > 0.5) {
+              if (translatedText.value.length > 0) {
+                translatedText.value += ' '
+              }
+              translatedText.value += detection.sign
+              
+              // Add to history
+              recentSignDetections.value.push({
+                sign: detection.sign,
+                confidence: detection.confidence,
+                timestamp: new Date()
+              })
+              
+              // Keep only last 50 detections
+              if (recentSignDetections.value.length > 50) {
+                recentSignDetections.value = recentSignDetections.value.slice(-50)
+              }
+              
+              // Update statistics
+              updateSignLanguageStats()
+            }
+          } else if (message.type === 'status') {
+            console.log('Sign language status:', message.message)
+          } else if (message.type === 'error') {
+            console.error('Sign language error:', message.message)
+            alert('Sign language error: ' + message.message)
+          }
+        } catch (error) {
+          console.error('Error parsing sign language WebSocket message:', error)
+        }
+      }
+      
+      signLanguageWS.onclose = () => {
+        console.log('Sign language WebSocket disconnected')
+        signLanguageFrame.value = null
+        currentSignDetection.value = null
+      }
+      
+      signLanguageWS.onerror = (error) => {
+        console.error('Sign language WebSocket error:', error)
+      }
+    }
+    
+    const stopSignLanguageWebSocket = () => {
+      if (signLanguageWS) {
+        signLanguageWS.send(JSON.stringify({
+          action: 'stop_detection'
+        }))
+        signLanguageWS.close()
+        signLanguageWS = null
+      }
+    }
+    
+    const updateSignLanguageStats = () => {
+      const totalSigns = recentSignDetections.value.length
+      const uniqueSignsSet = new Set(recentSignDetections.value.map(d => d.sign))
+      const totalConfidence = recentSignDetections.value.reduce((sum, d) => sum + d.confidence, 0)
+      
+      signLanguageStats.totalSigns = totalSigns
+      signLanguageStats.uniqueSigns = uniqueSignsSet.size
+      signLanguageStats.avgConfidence = totalSigns > 0 ? Math.round((totalConfidence / totalSigns) * 100) : 0
+      
+      // Calculate words per minute
+      if (signLanguageStartTime.value) {
+        const timeDiff = (new Date() - signLanguageStartTime.value) / 1000 / 60 // minutes
+        signLanguageStats.wordsPerMinute = timeDiff > 0 ? Math.round(totalSigns / timeDiff) : 0
+      }
+    }
+    
+    const toggleSignLanguage = () => {
+      signLanguageActive.value = !signLanguageActive.value
+      
+      if (signLanguageActive.value) {
+        signLanguageStartTime.value = new Date()
+        startSignLanguageWebSocket()
+        console.log('Sign language detection started')
+      } else {
+        signLanguageFrame.value = null
+        currentSignDetection.value = null
+        stopSignLanguageWebSocket()
+        console.log('Sign language detection stopped')
+      }
+    }
+
+    const clearTranslatedText = () => {
+      translatedText.value = ''
+      recentSignDetections.value = []
+      signLanguageHistory.value = []
+      
+      // Reset statistics
+      Object.assign(signLanguageStats, {
+        totalSigns: 0,
+        wordsPerMinute: 0,
+        avgConfidence: 0,
+        uniqueSigns: 0
+      })
+      
+      signLanguageStartTime.value = new Date()
+    }
+
+    const copyTranslatedText = async () => {
+      try {
+        await navigator.clipboard.writeText(translatedText.value)
+        alert('Text copied to clipboard!')
+      } catch (error) {
+        console.error('Failed to copy text:', error)
+        const textArea = document.createElement('textarea')
+        textArea.value = translatedText.value
+        document.body.appendChild(textArea)
+        textArea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textArea)
+        alert('Text copied to clipboard!')
+      }
+    }
+
     const getDeviceHistory = (deviceType) => {
       return deviceHistory.value.filter(entry => 
         entry.devices && entry.devices[deviceType] > 0
@@ -1572,6 +1937,9 @@ export default {
       if (ws) {
         ws.close()
       }
+      if (signLanguageWS) {
+        signLanguageWS.close()
+      }
       if (chartInstance) {
         chartInstance.destroy()
       }
@@ -1673,7 +2041,19 @@ export default {
       // Reset functionality exports
       showResetConfirmModal,
       resetting,
-      resetAllData
+      resetAllData,
+      // Tab management
+      activeTab,
+      // Sign language exports
+      signLanguageActive,
+      signLanguageFrame,
+      currentSignDetection,
+      translatedText,
+      recentSignDetections,
+      signLanguageStats,
+      toggleSignLanguage,
+      clearTranslatedText,
+      copyTranslatedText
     }
   }
 }
