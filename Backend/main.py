@@ -12,6 +12,7 @@ import uvicorn
 
 from emotion_detector import EmotionDetector
 from vector_face_tracker import VectorFaceTracker
+from device_detector import DeviceDetector
 
 app = FastAPI(title="Student Concentration Tracker API", version="1.0.0")
 
@@ -27,6 +28,7 @@ app.add_middleware(
 # Global instances
 emotion_detector = EmotionDetector()
 face_tracker = VectorFaceTracker()
+device_detector = DeviceDetector()
 
 # WebSocket connection manager
 class ConnectionManager:
@@ -132,6 +134,105 @@ async def get_camera_status():
     """Get camera status"""
     return {"active": camera_active}
 
+@app.get("/devices")
+async def get_device_counts():
+    """Get current device counts"""
+    try:
+        stats = device_detector.get_device_statistics()
+        return stats
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/devices/history")
+async def get_device_history(hours: int = 24):
+    """Get device detection history for the last N hours"""
+    try:
+        history = device_detector.get_device_history(hours)
+        return {"history": history, "count": len(history)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/devices/statistics")
+async def get_device_statistics():
+    """Get device detection statistics"""
+    try:
+        stats = device_detector.get_device_statistics()
+        return stats
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/devices/current")
+async def get_current_devices():
+    """Get current device detection summary"""
+    return device_detector.get_current_device_summary()
+
+@app.get("/api/devices/statistics")
+async def get_device_statistics_api():
+    """Get device detection statistics for API"""
+    return device_detector.get_device_statistics()
+
+@app.get("/api/devices/history")
+async def get_device_history_api(minutes: int = 60):
+    """Get device detection history for API"""
+    return device_detector.get_device_history(minutes)
+
+@app.post("/api/devices/clear-history")
+async def clear_device_history():
+    """Clear device detection history"""
+    device_detector.clear_history()
+    return {"message": "Device history cleared successfully"}
+
+@app.post("/api/devices/toggle-tracking")
+async def toggle_device_tracking(enabled: bool):
+    """Enable or disable device tracking"""
+    device_detector.set_device_tracking_enabled(enabled)
+    return {
+        "message": f"Device tracking {'enabled' if enabled else 'disabled'}",
+        "tracking_enabled": enabled
+    }
+
+@app.get("/api/devices/tracking-status")
+async def get_device_tracking_status():
+    """Get device tracking status"""
+    return {
+        "tracking_enabled": device_detector.is_device_tracking_enabled(),
+        "model_info": device_detector.get_model_info()
+    }
+
+@app.get("/api/devices/type-history/{device_type}")
+async def get_device_type_history(device_type: str, hours: int = 24):
+    """Get history for a specific device type"""
+    try:
+        history = device_detector.get_device_type_history(device_type, hours)
+        stats = device_detector.get_device_timeline_stats(device_type, hours)
+        return {
+            "device_type": device_type,
+            "history": history,
+            "statistics": stats
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/devices/detected-types")
+async def get_detected_device_types():
+    """Get all device types that have been detected"""
+    try:
+        return {
+            "detected_types": device_detector.get_all_device_types_detected(),
+            "supported_types": device_detector.get_supported_devices()
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/devices/export")
+async def export_device_data():
+    """Export device data to JSON"""
+    success = device_detector.save_device_data("device_export.json")
+    if success:
+        return {"message": "Device data exported successfully"}
+    else:
+        raise HTTPException(status_code=500, detail="Failed to export device data")
+
 async def process_camera_frames():
     """Background task to process camera frames"""
     global camera_active, cap
@@ -152,7 +253,7 @@ async def process_camera_frames():
             # Detect emotions in the frame
             detections = emotion_detector.detect_emotions_in_frame(frame)
             
-            # Process each detection
+            # Process each detection for face tracking
             detection_results = []
             for detection in detections:
                 face_encoding = detection['face_encoding']
@@ -176,22 +277,35 @@ async def process_camera_frames():
                     'timestamp': detection['timestamp']
                 })
             
-            # Annotate frame and convert to base64
-            annotated_frame = emotion_detector.annotate_frame(frame, detections)
-            _, buffer = cv2.imencode('.jpg', annotated_frame)
-            frame_b64 = base64.b64encode(buffer).decode('utf-8')
+            # Deep learning device detection
+            device_result = device_detector.detect_devices_in_frame(frame)
             
-            # Broadcast results to all connected clients
+            # Annotate frame with emotions
+            annotated_frame = emotion_detector.annotate_frame(frame, detections)
+            
+            # Annotate frame with devices
+            annotated_frame = device_detector.annotate_frame_with_devices(annotated_frame, device_result)
+            
+            # Encode frame for streaming
+            _, buffer = cv2.imencode('.jpg', annotated_frame)
+            frame_base64 = base64.b64encode(buffer).decode('utf-8')
+            
+            # Get current statistics
+            stats = face_tracker.get_face_statistics()
+            
+            # Prepare WebSocket message
             message = {
-                'type': 'detection_update',
-                'data': {
-                    'detections': detection_results,
-                    'frame': frame_b64,
-                    'statistics': face_tracker.get_face_statistics(),
-                    'timestamp': datetime.now().isoformat()
-                }
+                "type": "detection_update",
+                "data": {
+                    "frame": frame_base64,
+                    "detections": detection_results,
+                    "devices": device_result,
+                    "statistics": stats
+                },
+                "timestamp": datetime.now().isoformat()
             }
             
+            # Broadcast results to all connected clients
             await manager.broadcast(json.dumps(message))
             
             # Small delay to prevent overwhelming
@@ -217,11 +331,37 @@ async def websocket_endpoint(websocket: WebSocket):
 async def export_data_json():
     """Export all tracking data to JSON"""
     try:
-        filename = f"face_tracking_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-        face_tracker.save_to_json(filename)
-        return {"message": f"Data exported to {filename}"}
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        
+        # Export face tracking data
+        face_filename = f"face_tracking_export_{timestamp}.json"
+        face_tracker.save_to_json(face_filename)
+        
+        # Export device tracking data
+        device_filename = f"device_tracking_export_{timestamp}.json"
+        device_detector.save_device_data(device_filename)
+        
+        return {"message": f"Data exported to {face_filename} and {device_filename}"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/system/reset-all-data")
+async def reset_all_data():
+    """Reset all data including face database and device history"""
+    try:
+        # Clear device history
+        device_detector.clear_history()
+        
+        # Reset face tracking database
+        from reset_database import reset_face_tracking_database
+        reset_face_tracking_database()
+        
+        # Reset face tracker
+        face_tracker.reset()
+        
+        return {"message": "All data has been reset successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to reset data: {str(e)}")
 
 # Cleanup on shutdown
 @app.on_event("shutdown")
@@ -232,4 +372,7 @@ async def shutdown_event():
         cap.release()
 
 if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     uvicorn.run(app, host="0.0.0.0", port=8000)

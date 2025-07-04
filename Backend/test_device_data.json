@@ -1,0 +1,3249 @@
+{
+  "current_devices": {},
+  "history": [
+    {
+      "timestamp": "2025-07-04T12:34:42.431267",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:42.530984",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:42.614234",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:42.706177",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:42.795022",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:42.879710",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:42.970949",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.052228",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.143665",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.228898",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.316025",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.407370",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.489440",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.580504",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.677857",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.773659",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.851886",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:43.943695",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.033780",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.122990",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.219256",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.311658",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.405146",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.496210",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.598503",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.690008",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.784121",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.874662",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:44.967757",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.055105",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.143237",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.235293",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.316263",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.407921",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.499097",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.588989",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.672927",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.757312",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.844463",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:45.928121",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.018183",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.103308",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.194814",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.276344",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.377829",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.467555",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.551660",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.643398",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.725795",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.818349",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:46.919235",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.011993",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.104657",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.197567",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.296785",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.392704",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.484822",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.579147",
+      "devices": {
+        "monitor": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.669966",
+      "devices": {
+        "monitor": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.759947",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.843795",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:47.935889",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.029242",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.108640",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.199531",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.291472",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.372433",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.464855",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.546265",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.636098",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.719656",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.822354",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.909531",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:48.995450",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.092672",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.183423",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.267589",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.357526",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.441934",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.531642",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.628099",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.716501",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.815951",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:49.909261",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.002014",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.093840",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.192540",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.284079",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.379972",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.483724",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.573624",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.665441",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.749062",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.840411",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:50.925078",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.014257",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.105608",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.187636",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.276917",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.373073",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.461936",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.543831",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.634625",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.723782",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.817273",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:51.909254",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.001449",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.082565",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.173942",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.260069",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.355475",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.449132",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.543368",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.637169",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.731156",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.825817",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:52.918380",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.011802",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.109148",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.201294",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.300262",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.394061",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.495931",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.587345",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.677353",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.761422",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.850689",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:53.936024",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.025447",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.109096",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.200764",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.284855",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.382849",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.465338",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.565908",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.660507",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.747151",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.834019",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:54.915352",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.020187",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.115271",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.211123",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.298862",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.399832",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.493946",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.586059",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.685338",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.777510",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.870533",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:55.963993",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.053628",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.137328",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.228678",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.319727",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.402530",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.492608",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.575120",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.667451",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.748205",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.839814",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:56.929385",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.023285",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.104382",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.197073",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.296186",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.389273",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.474779",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.564388",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.649839",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.732077",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.834866",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:57.926583",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.018088",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.110641",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.204322",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.293187",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.397241",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.484159",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.584340",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.669588",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.746535",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.838200",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:58.927617",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.011212",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.101227",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.185615",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.275182",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.368778",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.470115",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.563620",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.651091",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.735103",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.816141",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:34:59.908354",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.009295",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.098701",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.187758",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.270954",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.364664",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.452054",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.546540",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.642599",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.732787",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.829109",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:00.923728",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.016370",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.117179",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.215976",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.309272",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.391974",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.485955",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.581204",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.667527",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.749724",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.840954",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:01.932525",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.024330",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.107870",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.197589",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.286747",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.371589",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.454413",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.546349",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.628020",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.730064",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.825421",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.910423",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:02.999725",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.085521",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.172263",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.266684",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.359736",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.450345",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.549553",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.643567",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.735694",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.828935",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:03.925176",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.019409",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.109189",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.193903",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.286392",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.377091",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.467629",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.550828",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.633912",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.725962",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.815442",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.899084",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:04.991129",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.081640",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.165577",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.264868",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.348561",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.444067",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.535697",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.619607",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.701585",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.793102",
+      "devices": {
+        "monitor": 1,
+        "laptop": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.884391",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:05.986269",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.077962",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.170114",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.268009",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.359545",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.448536",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.547420",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.636388",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.732447",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.832061",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:06.916007",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.007940",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.099192",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.191530",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.273108",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.356351",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.446790",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.533748",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.618289",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.701838",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.793397",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.875652",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:07.967742",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.049153",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.150062",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.238835",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.328731",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.410601",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.501668",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.592227",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.687664",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.779609",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.878688",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:08.975082",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.069726",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.165056",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.258257",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.350046",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.437306",
+      "devices": {
+        "toy": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.532498",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.620090",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.711411",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.793239",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.884304",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:09.966741",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.098721",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.240909",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.342859",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.429456",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.516057",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.605330",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.689179",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.780346",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.862320",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:10.963127",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.051512",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.144037",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.225729",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.317087",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.404721",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.502062",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.604497",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.707541",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.799510",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.896285",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:11.983161",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.085557",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.227445",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.334931",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.428853",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.528959",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.620916",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.710305",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.797427",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.883194",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:12.965530",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.057319",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.148803",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.239715",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.329727",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.413722",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.502855",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.586273",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.677387",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.769291",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.857354",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:13.948484",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.030910",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.122759",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.205171",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.300487",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.395651",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.483652",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.579618",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.668268",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.767036",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.850101",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:14.946198",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.041119",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.132428",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.213321",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.305222",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.386536",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.478022",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.559196",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.651682",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.733223",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.824485",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:15.918357",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.006246",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.091575",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.170940",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.262489",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.343716",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.446840",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.533846",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.624927",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.706531",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.799083",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.886141",
+      "devices": {
+        "smartphone": 1,
+        "toy": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:16.983873",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.076295",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.168418",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.270176",
+      "devices": {
+        "smartphone": 1,
+        "laptop": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.371863",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.481962",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.590435",
+      "devices": {
+        "laptop": 1,
+        "smartphone": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.702448",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.806733",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:17.909100",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.020483",
+      "devices": {
+        "smartphone": 1,
+        "laptop": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.136635",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.246024",
+      "devices": {
+        "smartphone": 1,
+        "laptop": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.347748",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.458060",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.561988",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.671648",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.773437",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.877415",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:18.979625",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.081218",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.184877",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.285377",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.389145",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.511843",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.618535",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.716920",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.820981",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:19.921723",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.034356",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.147306",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.259105",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.369038",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.482234",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.592250",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.706579",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.820124",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:20.924123",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.031228",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.135216",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.237027",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.337767",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.439364",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.549713",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.654081",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.756344",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.866173",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:21.970075",
+      "devices": {
+        "smartphone": 1,
+        "laptop": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.077391",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.183629",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.286671",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.388948",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.490093",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.592096",
+      "devices": {
+        "laptop": 1,
+        "smartphone": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.715997",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.825095",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:22.926400",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.030223",
+      "devices": {
+        "laptop": 1,
+        "smartphone": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.131413",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.250997",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.364977",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.467446",
+      "devices": {
+        "laptop": 1,
+        "smartphone": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.582084",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.685532",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.805969",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:23.915086",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.018536",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.130377",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.222378",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.324384",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.425280",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.527827",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.637484",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.741481",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.844722",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:24.944718",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.046372",
+      "devices": {
+        "toy": 1,
+        "smartphone": 1
+      },
+      "total_devices": 2,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.156299",
+      "devices": {
+        "smartphone": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.259971",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.361740",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.463515",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.565135",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.666249",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.770864",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.887279",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:25.988415",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.090092",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.191802",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.303948",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.414866",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.524896",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.639184",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.750899",
+      "devices": {
+        "laptop": 1
+      },
+      "total_devices": 1,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.877280",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:26.994772",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.105487",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.215321",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.325977",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.427817",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.533656",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.653024",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.792376",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:27.903773",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.005782",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.204600",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.337947",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.471023",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.606865",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.725011",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.839095",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:28.951459",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:29.073792",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:29.193650",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:29.332618",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:29.595423",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:29.714183",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:29.821556",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:29.920504",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:30.032977",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    },
+    {
+      "timestamp": "2025-07-04T12:35:30.149406",
+      "devices": {},
+      "total_devices": 0,
+      "detection_method": "yolo"
+    }
+  ],
+  "statistics": {
+    "total_detections": 500,
+    "device_type_counts": {
+      "laptop": 39,
+      "smartphone": 63,
+      "monitor": 3,
+      "toy": 3
+    },
+    "avg_devices_per_detection": 0.216,
+    "peak_device_count": 2,
+    "avg_distraction_level": "low"
+  },
+  "model_info": {
+    "model_type": "YOLOv8",
+    "model_file": "yolov8n.pt",
+    "available_classes": 80,
+    "target_device_classes": [
+      "smartphone",
+      "laptop",
+      "tablet",
+      "monitor",
+      "book",
+      "mouse",
+      "keyboard",
+      "remote"
+    ],
+    "status": "active"
+  },
+  "supported_devices": [
+    "smartphone",
+    "laptop",
+    "tablet",
+    "monitor",
+    "book",
+    "mouse",
+    "keyboard",
+    "remote"
+  ],
+  "saved_at": "2025-07-04T12:35:30.661937"
+}

@@ -213,3 +213,26 @@ class VectorFaceTracker:
         
         with open(filename, 'w') as f:
             json.dump(data, f, indent=2, default=str)
+    
+    def reset(self):
+        """Reset all tracking data and clear the database"""
+        try:
+            # Clear in-memory tracking
+            self.tracked_faces.clear()
+            
+            # Clear ChromaDB collection
+            try:
+                self.chroma_client.delete_collection("face_encodings")
+            except:
+                pass  # Collection might not exist
+            
+            # Recreate the collection
+            self.collection = self.chroma_client.create_collection(
+                name="face_encodings",
+                metadata={"hnsw:space": "cosine"}
+            )
+            
+            print("Face tracker has been reset successfully")
+        except Exception as e:
+            print(f"Error resetting face tracker: {e}")
+            raise e
